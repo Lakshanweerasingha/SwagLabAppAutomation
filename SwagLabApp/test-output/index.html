@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SwagLabsSuite" class="navigator-link">
-              <span class="suite-name border-passed">SwagLabsSuite</span>
+              <span class="suite-name border-failed">SwagLabsSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-SwagLabsSuite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SwagLabsSuite" class="hide-methods failed suite-SwagLabsSuite"> (hide)</a> <!-- hide-methods failed suite-SwagLabsSuite -->
+                      <a href="#" panel-name="suite-SwagLabsSuite" class="show-methods failed suite-SwagLabsSuite"> (show)</a> <!-- show-methods failed suite-SwagLabsSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SwagLabsSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabsSuite" title="Tests.WebViewTest" class="method navigator-link" hash-for-method="testWebViewNavigation">testWebViewNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SwagLabsSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -138,6 +152,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SwagLabsSuite" class="panel SwagLabsSuite">
+          <div class="suite-SwagLabsSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.WebViewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWebViewNavigation">
+                  </a> <!-- testWebViewNavigation -->
+                  <span class="method-name">testWebViewNavigation</span>
+                  <div class="stack-trace">org.openqa.selenium.UnsupportedCommandException: submitElement
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [07da5570-d201-4177-8005-07eb32ce0ee7, submitElement {id=f.71FC0ABCB51C07C711A62D46565CFC67.d.8FB93917431D1E35B1F3280553F8BEC6.e.4}]
+Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 132, appium:takesScreenshot: true, appium:viewportRect: {height: 2268, left: 0, top: 132, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (07da5570-d201-4177-8005-07eb32ce0ee7)] -&gt; class name: gLFyf]
+Session ID: 07da5570-d201-4177-8005-07eb32ce0ee7
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:109)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:203)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:82)
+	at Pages.WebViewPage.searchAppiumAndTapFirstResult(WebViewPage.java:77)
+	at Tests.WebViewTest.testWebViewNavigation(WebViewTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLabsSuite-class-failed -->
           <div class="suite-SwagLabsSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,6 +284,11 @@
       &lt;class name=&quot;Tests.CartPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CartPageTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;WebViewTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.WebViewTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- WebViewTest --&gt;
 &lt;/suite&gt; &lt;!-- SwagLabsSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,6 +310,9 @@
               </li>
               <li>
                 <span class="test-name">CartPageTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">WebViewTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -281,32 +338,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCheckoutFlow')
-data.setCell(0, 2, 'Tests.CartPageTest')
-data.setCell(0, 3, 11527);
+data.setCell(0, 1, 'testWebViewNavigation')
+data.setCell(0, 2, 'Tests.WebViewTest')
+data.setCell(0, 3, 13593);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testGetAllTitlesAndSelectOnesie')
-data.setCell(1, 2, 'Tests.HomePageTest')
-data.setCell(1, 3, 5625);
+data.setCell(1, 1, 'testCheckoutFlow')
+data.setCell(1, 2, 'Tests.CartPageTest')
+data.setCell(1, 3, 10658);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testInvalidLogin')
 data.setCell(2, 2, 'Tests.LoginTest')
-data.setCell(2, 3, 5259);
+data.setCell(2, 3, 6420);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAddToCartAndOpenCart')
-data.setCell(3, 2, 'Tests.ProductPageTest')
-data.setCell(3, 3, 4078);
+data.setCell(3, 1, 'testGetAllTitlesAndSelectOnesie')
+data.setCell(3, 2, 'Tests.HomePageTest')
+data.setCell(3, 3, 5751);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testValidLogin')
-data.setCell(4, 2, 'Tests.LoginTest')
-data.setCell(4, 3, 3278);
+data.setCell(4, 1, 'testAddToCartAndOpenCart')
+data.setCell(4, 2, 'Tests.ProductPageTest')
+data.setCell(4, 3, 4410);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testValidLogin')
+data.setCell(5, 2, 'Tests.LoginTest')
+data.setCell(5, 3, 3376);
 window.suiteTableData['SwagLabsSuite']= { tableData: data, tableDiv: 'times-div-SwagLabsSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-SwagLabsSuite">
               </div> <!-- times-div-SwagLabsSuite -->
             </div> <!-- times-div -->
@@ -332,7 +393,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.WebViewTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -342,36 +403,45 @@ return data;
               <div class="chronological-class-name">Tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">5551 ms</span>
+                <span class="method-start">9958 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">10813 ms</span>
+                <span class="method-start">16382 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGetAllTitlesAndSelectOnesie</span>
-                <span class="method-start">14157 ms</span>
+                <span class="method-start">19832 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testAddToCartAndOpenCart</span>
-                <span class="method-start">19791 ms</span>
+                <span class="method-start">25590 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.CartPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testCheckoutFlow</span>
-                <span class="method-start">23879 ms</span>
+                <span class="method-start">30010 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.WebViewTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testWebViewNavigation</span>
+                <span class="method-start">40674 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35410 ms</span>
+                <span class="method-start">54286 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

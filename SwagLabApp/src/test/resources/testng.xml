@@ -23,5 +23,11 @@
             <class name="Tests.CartPageTest"/>
         </classes>
     </test>
+    
+      <test name="WebViewTest">
+        <classes>
+            <class name="Tests.WebViewTest"/>
+        </classes>
+    </test>
 
 </suite>

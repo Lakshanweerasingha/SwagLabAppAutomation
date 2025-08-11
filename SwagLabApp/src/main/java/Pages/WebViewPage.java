@@ -22,19 +22,19 @@ public class WebViewPage {
 
     public void tapSidebarIcon() {
         WebElement sidebarIcon = wait.until(ExpectedConditions.elementToBeClickable(
-                AppiumBy.accessibilityId("test-Menu")));
+                AppiumBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Menu\"]/android.view.ViewGroup/android.widget.ImageView")));
         sidebarIcon.click();
     }
 
     public void tapWebViewIcon() {
         WebElement webViewIcon = wait.until(ExpectedConditions.elementToBeClickable(
-                AppiumBy.accessibilityId("test-Webview")));
+                AppiumBy.accessibilityId("test-WEBVIEW")));
         webViewIcon.click();
     }
 
     public void enterUrl(String url) {
         WebElement urlTextbox = wait.until(ExpectedConditions.elementToBeClickable(
-                AppiumBy.accessibilityId("test-URL")));
+                AppiumBy.accessibilityId("test-enter a https url here...")));
         urlTextbox.clear();
         urlTextbox.sendKeys(url);
     }
@@ -53,23 +53,29 @@ public class WebViewPage {
             for (String context : contexts) {
                 if (context.toLowerCase().contains("webview")) {
                     driver.context(context);
+                    System.out.println("Now you are in web view context: " + context);
                     return;
                 }
             }
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-            	
+                // Ignore
             }
             retry++;
         }
         throw new RuntimeException("WEBVIEW context not found");
     }
 
-    public void tapFirstSearchResult() {
-        By firstResultLocator = By.cssSelector("h3");
 
-        WebElement firstResult = wait.until(ExpectedConditions.elementToBeClickable(firstResultLocator));
-        firstResult.click();
+    public void searchAppiumAndTapFirstResult() {
+    	WebElement searchBox = wait.until(ExpectedConditions.elementToBeClickable(By.className("gLFyf")));
+        searchBox.click();
+
+        searchBox.sendKeys("Appium");
+
+        searchBox.submit();
+
     }
+    
 }
