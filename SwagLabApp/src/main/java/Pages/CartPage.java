@@ -18,10 +18,15 @@ public class CartPage {
     }
 
     public void tapCheckout() {
+        String uiScrollToElement = "new UiScrollable(new UiSelector().scrollable(true))"
+                + ".scrollIntoView(new UiSelector().description(\"test-CHECKOUT\"))";
+        driver.findElement(AppiumBy.androidUIAutomator(uiScrollToElement));
+
         WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(
                 AppiumBy.accessibilityId("test-CHECKOUT")));
         checkoutBtn.click();
     }
+
 
     public void tapContinue() {
         WebElement continueBtn = wait.until(ExpectedConditions.elementToBeClickable(

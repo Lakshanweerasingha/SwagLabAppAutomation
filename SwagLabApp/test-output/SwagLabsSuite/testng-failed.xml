@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [SwagLabsSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="WebViewTest(failed)">
+  <test thread-count="5" name="ProductPageTest(failed)">
     <classes>
-      <class name="Tests.WebViewTest">
+      <class name="Tests.ProductPageTest">
         <methods>
+          <include name="testAddToCartAndOpenCart"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testWebViewNavigation"/>
         </methods>
-      </class> <!-- Tests.WebViewTest -->
+      </class> <!-- Tests.ProductPageTest -->
     </classes>
-  </test> <!-- WebViewTest(failed) -->
+  </test> <!-- ProductPageTest(failed) -->
 </suite> <!-- Failed suite [SwagLabsSuite] -->

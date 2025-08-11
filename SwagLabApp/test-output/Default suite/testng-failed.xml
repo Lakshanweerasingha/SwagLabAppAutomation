@@ -7,6 +7,8 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="selectTheItems"/>
+          <include name="testTapAllHomePageActions"/>
           <include name="testGetAllTitlesAndSelectOnesie"/>
         </methods>
       </class> <!-- Tests.HomePageTest -->

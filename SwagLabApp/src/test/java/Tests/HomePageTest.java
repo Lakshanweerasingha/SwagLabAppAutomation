@@ -10,7 +10,7 @@ import java.util.List;
 
 public class HomePageTest extends BaseTest {
 
-    @Test
+    @Test(priority=1)
     public void testGetAllTitlesAndSelectOnesie() {
      
         HomePage homePage = new HomePage(driver);
@@ -21,10 +21,31 @@ public class HomePageTest extends BaseTest {
         for (WebElement title : titles) {
             System.out.println(" - " + title.getText());
         }
+        
+    }
+        
+        @Test(priority=2)
+        public void testTapAllHomePageActions() {
+            HomePage homePage = new HomePage(driver);
+            Assert.assertTrue(homePage.isPageLoaded(), "Home page did not load.");
 
-        homePage.scrollToProductAndSelect("Sauce Labs Onesie");
+            homePage.tapToggleIcon();
+            homePage.tapFirstAddButton();
+            homePage.tapSecondAddButton();
+            homePage.tapFirstRemoveButton();
+            homePage.tapFilterButton();
+            homePage.tapSortPriceLowToHigh();   
+            homePage.tapToggleIcon();
+        }
 
-        String productTitle = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Sauce Labs Onesie\"]")).getText();
-        Assert.assertEquals(productTitle, "Sauce Labs Onesie", "Wrong product opened after scroll.");
+        @Test(priority=3)
+        public void selectTheItems() {
+            HomePage homePage = new HomePage(driver);
+            
+            homePage.scrollToProductAndSelect("Sauce Labs Onesie");
+
+            String productTitle = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Sauce Labs Onesie\"]")).getText();
+            Assert.assertEquals(productTitle, "Sauce Labs Onesie", "Wrong product opened after scroll.");
+
     }
 }

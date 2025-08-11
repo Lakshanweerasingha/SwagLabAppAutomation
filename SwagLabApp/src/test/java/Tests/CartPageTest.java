@@ -14,13 +14,9 @@ public class CartPageTest extends BaseTest {
 
         cartPage.tapContinue();
         Assert.assertTrue(cartPage.isErrorMessageDisplayed(), "Error message should be displayed when continue tapped without data");
-
         cartPage.fillCheckoutForm("Test", "User", "12345");
-
         cartPage.tapContinue();
-
         cartPage.scrollToFinishAndTap();
-
         cartPage.tapBackHome();
 
     }

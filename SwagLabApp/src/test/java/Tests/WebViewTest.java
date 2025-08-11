@@ -4,9 +4,8 @@ import Pages.WebViewPage;
 import org.testng.annotations.Test;
 
 public class WebViewTest extends BaseTest {
-
     @Test
-    public void testWebViewNavigation() {
+    public void testWebViewNavigation() throws InterruptedException {
         WebViewPage webViewPage = new WebViewPage(driver);
 
         webViewPage.tapSidebarIcon();
@@ -14,7 +13,8 @@ public class WebViewTest extends BaseTest {
         webViewPage.enterUrl("https://www.google.com");
         webViewPage.tapGoToSite();
         webViewPage.switchToWebViewContext();
-        webViewPage.searchAppiumAndTapFirstResult();
-
+        webViewPage.searchAppium();
+        Thread.sleep(2000);
+     
     }
 }
