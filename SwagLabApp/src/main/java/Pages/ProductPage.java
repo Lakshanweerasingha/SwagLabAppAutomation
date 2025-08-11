@@ -21,13 +21,16 @@ public class ProductPage {
         String uiScroll = "new UiScrollable(new UiSelector().scrollable(true))"
                 + ".scrollIntoView(new UiSelector().text(\"ADD TO CART\"))";
 
-        WebElement addToCartBtn = driver.findElement(AppiumBy.androidUIAutomator(uiScroll));
-        wait.until(ExpectedConditions.elementToBeClickable(addToCartBtn)).click();
+        driver.findElement(AppiumBy.androidUIAutomator(uiScroll));
+
+        WebElement addToCartBtn = wait.until(ExpectedConditions.elementToBeClickable(
+                AppiumBy.androidUIAutomator("new UiSelector().text(\"ADD TO CART\")")));
+        addToCartBtn.click();
     }
 
     public void tapCartIcon() {
         WebElement cartIcon = wait.until(ExpectedConditions.elementToBeClickable(
-                AppiumBy.accessibilityId("test-Cart")));
+                AppiumBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.widget.ImageView")));
         cartIcon.click();
     }
 }

@@ -11,5 +11,17 @@
             <class name="Tests.HomePageTest"/>
         </classes>
     </test>
+    
+     <test name="ProductPageTest">
+        <classes>
+            <class name="Tests.ProductPageTest"/>
+        </classes>
+    </test>
+
+   <test name="CartPageTest">
+        <classes>
+            <class name="Tests.CartPageTest"/>
+        </classes>
+    </test>
 
 </suite>

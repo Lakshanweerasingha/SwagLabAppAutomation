@@ -1,78 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-11T08:32:36 IST" name="SwagLabsSuite" finished-at="2025-08-11T08:32:50 IST" duration-ms="13976">
+  <suite started-at="2025-08-11T09:14:40 IST" name="SwagLabsSuite" finished-at="2025-08-11T09:15:10 IST" duration-ms="29889">
     <groups>
     </groups>
-    <test started-at="2025-08-11T08:32:36 IST" name="LoginTest" finished-at="2025-08-11T08:32:45 IST" duration-ms="8527">
+    <test started-at="2025-08-11T09:14:40 IST" name="LoginTest" finished-at="2025-08-11T09:14:49 IST" duration-ms="8574">
       <class name="Tests.LoginTest">
-        <test-method signature="testInvalidLogin()[pri:1, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T08:32:36 IST" name="testInvalidLogin" finished-at="2025-08-11T08:32:42 IST" duration-ms="5203" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:1, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T09:14:40 IST" name="testInvalidLogin" finished-at="2025-08-11T09:14:45 IST" duration-ms="5259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method signature="testValidLogin()[pri:2, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T08:32:42 IST" name="testValidLogin" finished-at="2025-08-11T08:32:45 IST" duration-ms="3293" status="PASS">
+        <test-method signature="testValidLogin()[pri:2, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T09:14:45 IST" name="testValidLogin" finished-at="2025-08-11T09:14:49 IST" duration-ms="3278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
       </class> <!-- Tests.LoginTest -->
     </test> <!-- LoginTest -->
-    <test started-at="2025-08-11T08:32:45 IST" name="HomePageTest" finished-at="2025-08-11T08:32:50 IST" duration-ms="5402">
+    <test started-at="2025-08-11T09:14:49 IST" name="HomePageTest" finished-at="2025-08-11T09:14:54 IST" duration-ms="5628">
       <class name="Tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@6ad82709]" started-at="2025-08-11T08:32:32 IST" name="setUp" finished-at="2025-08-11T08:32:36 IST" duration-ms="4643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetAllTitlesAndSelectOnesie()[pri:0, instance:Tests.HomePageTest@6ad82709]" started-at="2025-08-11T08:32:45 IST" name="testGetAllTitlesAndSelectOnesie" finished-at="2025-08-11T08:32:50 IST" duration-ms="5399" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Wrong product opened after scroll. expected [auce Labs Onesie] but found [Sauce Labs Onesie]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Wrong product opened after scroll. expected [auce Labs Onesie] but found [Sauce Labs Onesie]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at Tests.HomePageTest.testGetAllTitlesAndSelectOnesie(HomePageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testGetAllTitlesAndSelectOnesie()[pri:0, instance:Tests.HomePageTest@6ad82709]" started-at="2025-08-11T09:14:49 IST" name="testGetAllTitlesAndSelectOnesie" finished-at="2025-08-11T09:14:54 IST" duration-ms="5625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllTitlesAndSelectOnesie -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePageTest@6ad82709]" started-at="2025-08-11T08:32:50 IST" name="tearDown" finished-at="2025-08-11T08:32:51 IST" duration-ms="508" status="PASS">
+      </class> <!-- Tests.HomePageTest -->
+    </test> <!-- HomePageTest -->
+    <test started-at="2025-08-11T09:14:54 IST" name="ProductPageTest" finished-at="2025-08-11T09:14:59 IST" duration-ms="4082">
+      <class name="Tests.ProductPageTest">
+        <test-method signature="testAddToCartAndOpenCart()[pri:0, instance:Tests.ProductPageTest@2362f559]" started-at="2025-08-11T09:14:54 IST" name="testAddToCartAndOpenCart" finished-at="2025-08-11T09:14:59 IST" duration-ms="4078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCartAndOpenCart -->
+      </class> <!-- Tests.ProductPageTest -->
+    </test> <!-- ProductPageTest -->
+    <test started-at="2025-08-11T09:14:59 IST" name="CartPageTest" finished-at="2025-08-11T09:15:10 IST" duration-ms="11531">
+      <class name="Tests.CartPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartPageTest@247bddad]" started-at="2025-08-11T09:14:35 IST" name="setUp" finished-at="2025-08-11T09:14:40 IST" duration-ms="5516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutFlow()[pri:0, instance:Tests.CartPageTest@247bddad]" started-at="2025-08-11T09:14:59 IST" name="testCheckoutFlow" finished-at="2025-08-11T09:15:10 IST" duration-ms="11527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartPageTest@247bddad]" started-at="2025-08-11T09:15:10 IST" name="tearDown" finished-at="2025-08-11T09:15:11 IST" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.HomePageTest -->
-    </test> <!-- HomePageTest -->
+      </class> <!-- Tests.CartPageTest -->
+    </test> <!-- CartPageTest -->
   </suite> <!-- SwagLabsSuite -->
 </testng-results>
