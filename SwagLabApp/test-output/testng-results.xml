@@ -1,128 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-11T18:11:12 IST" name="SwagLabsSuite" finished-at="2025-08-11T18:12:03 IST" duration-ms="50840">
+  <suite started-at="2025-08-11T18:52:02 IST" name="SwagLabsSuite" finished-at="2025-08-11T18:52:54 IST" duration-ms="51215">
     <groups>
     </groups>
-    <test started-at="2025-08-11T18:11:12 IST" name="LoginTest" finished-at="2025-08-11T18:11:21 IST" duration-ms="8568">
+    <test started-at="2025-08-11T18:52:02 IST" name="LoginTest" finished-at="2025-08-11T18:52:11 IST" duration-ms="8429">
       <class name="Tests.LoginTest">
-        <test-method signature="testInvalidLogin()[pri:1, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T18:11:12 IST" name="testInvalidLogin" finished-at="2025-08-11T18:11:17 IST" duration-ms="5247" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:1, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T18:52:02 IST" name="testInvalidLogin" finished-at="2025-08-11T18:52:08 IST" duration-ms="5103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method signature="testValidLogin()[pri:2, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T18:11:17 IST" name="testValidLogin" finished-at="2025-08-11T18:11:21 IST" duration-ms="3284" status="PASS">
+        <test-method signature="testValidLogin()[pri:2, instance:Tests.LoginTest@4c402120]" started-at="2025-08-11T18:52:08 IST" name="testValidLogin" finished-at="2025-08-11T18:52:11 IST" duration-ms="3296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
       </class> <!-- Tests.LoginTest -->
     </test> <!-- LoginTest -->
-    <test started-at="2025-08-11T18:11:21 IST" name="HomePageTest" finished-at="2025-08-11T18:11:29 IST" duration-ms="8278">
+    <test started-at="2025-08-11T18:52:11 IST" name="HomePageTest" finished-at="2025-08-11T18:52:19 IST" duration-ms="8498">
       <class name="Tests.HomePageTest">
-        <test-method signature="testGetAllTitlesAndSelectOnesie()[pri:1, instance:Tests.HomePageTest@7817fd62]" started-at="2025-08-11T18:11:21 IST" name="testGetAllTitlesAndSelectOnesie" finished-at="2025-08-11T18:11:22 IST" duration-ms="1213" status="PASS">
+        <test-method signature="testGetAllTitlesAndSelectOnesie()[pri:1, instance:Tests.HomePageTest@7817fd62]" started-at="2025-08-11T18:52:11 IST" name="testGetAllTitlesAndSelectOnesie" finished-at="2025-08-11T18:52:12 IST" duration-ms="1211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllTitlesAndSelectOnesie -->
-        <test-method signature="testTapAllHomePageActions()[pri:2, instance:Tests.HomePageTest@7817fd62]" started-at="2025-08-11T18:11:22 IST" name="testTapAllHomePageActions" finished-at="2025-08-11T18:11:27 IST" duration-ms="5174" status="PASS">
+        <test-method signature="testTapAllHomePageActions()[pri:2, instance:Tests.HomePageTest@7817fd62]" started-at="2025-08-11T18:52:12 IST" name="testTapAllHomePageActions" finished-at="2025-08-11T18:52:17 IST" duration-ms="5375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTapAllHomePageActions -->
-        <test-method signature="selectTheItems()[pri:3, instance:Tests.HomePageTest@7817fd62]" started-at="2025-08-11T18:11:27 IST" name="selectTheItems" finished-at="2025-08-11T18:11:29 IST" duration-ms="1883" status="PASS">
+        <test-method signature="selectTheItems()[pri:3, instance:Tests.HomePageTest@7817fd62]" started-at="2025-08-11T18:52:17 IST" name="selectTheItems" finished-at="2025-08-11T18:52:19 IST" duration-ms="1904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTheItems -->
       </class> <!-- Tests.HomePageTest -->
     </test> <!-- HomePageTest -->
-    <test started-at="2025-08-11T18:11:29 IST" name="ProductPageTest" finished-at="2025-08-11T18:11:33 IST" duration-ms="4325">
+    <test started-at="2025-08-11T18:52:19 IST" name="ProductPageTest" finished-at="2025-08-11T18:52:25 IST" duration-ms="5163">
       <class name="Tests.ProductPageTest">
-        <test-method signature="testAddToCartAndOpenCart()[pri:0, instance:Tests.ProductPageTest@4c178a76]" started-at="2025-08-11T18:11:29 IST" name="testAddToCartAndOpenCart" finished-at="2025-08-11T18:11:33 IST" duration-ms="4318" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [1647dbad-8c5c-4a19-845d-0fa4b0b4b75f, findElement {value=//android.widget.TextView[@text="YOUR CART"], using=xpath}]
-Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 132, appium:takesScreenshot: true, appium:viewportRect: {height: 2268, left: 0, top: 132, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 1647dbad-8c5c-4a19-845d-0fa4b0b4b75f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [1647dbad-8c5c-4a19-845d-0fa4b0b4b75f, findElement {value=//android.widget.TextView[@text="YOUR CART"], using=xpath}]
-Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 132, appium:takesScreenshot: true, appium:viewportRect: {height: 2268, left: 0, top: 132, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 1647dbad-8c5c-4a19-845d-0fa4b0b4b75f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at Tests.ProductPageTest.testAddToCartAndOpenCart(ProductPageTest.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="testAddToCartAndOpenCart()[pri:0, instance:Tests.ProductPageTest@247bddad]" started-at="2025-08-11T18:52:19 IST" name="testAddToCartAndOpenCart" finished-at="2025-08-11T18:52:25 IST" duration-ms="5159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCartAndOpenCart -->
       </class> <!-- Tests.ProductPageTest -->
     </test> <!-- ProductPageTest -->
-    <test started-at="2025-08-11T18:11:33 IST" name="CartPageTest" finished-at="2025-08-11T18:11:48 IST" duration-ms="14822">
+    <test started-at="2025-08-11T18:52:25 IST" name="CartPageTest" finished-at="2025-08-11T18:52:38 IST" duration-ms="13872">
       <class name="Tests.CartPageTest">
-        <test-method signature="testCheckoutFlow()[pri:0, instance:Tests.CartPageTest@7770f470]" started-at="2025-08-11T18:11:33 IST" name="testCheckoutFlow" finished-at="2025-08-11T18:11:48 IST" duration-ms="14819" status="PASS">
+        <test-method signature="testCheckoutFlow()[pri:0, instance:Tests.CartPageTest@77f1baf5]" started-at="2025-08-11T18:52:25 IST" name="testCheckoutFlow" finished-at="2025-08-11T18:52:38 IST" duration-ms="13870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutFlow -->
       </class> <!-- Tests.CartPageTest -->
     </test> <!-- CartPageTest -->
-    <test started-at="2025-08-11T18:11:48 IST" name="WebViewTest" finished-at="2025-08-11T18:12:03 IST" duration-ms="14758">
+    <test started-at="2025-08-11T18:52:38 IST" name="WebViewTest" finished-at="2025-08-11T18:52:54 IST" duration-ms="15181">
       <class name="Tests.WebViewTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.WebViewTest@6c40365c]" started-at="2025-08-11T18:11:07 IST" name="setUp" finished-at="2025-08-11T18:11:12 IST" duration-ms="5388" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.WebViewTest@38afe297]" started-at="2025-08-11T18:51:57 IST" name="setUp" finished-at="2025-08-11T18:52:02 IST" duration-ms="5022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testWebViewNavigation()[pri:0, instance:Tests.WebViewTest@6c40365c]" started-at="2025-08-11T18:11:48 IST" name="testWebViewNavigation" finished-at="2025-08-11T18:12:03 IST" duration-ms="14756" status="PASS">
+        <test-method signature="testWebViewNavigation()[pri:0, instance:Tests.WebViewTest@38afe297]" started-at="2025-08-11T18:52:38 IST" name="testWebViewNavigation" finished-at="2025-08-11T18:52:54 IST" duration-ms="15177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWebViewNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WebViewTest@6c40365c]" started-at="2025-08-11T18:12:03 IST" name="tearDown" finished-at="2025-08-11T18:12:04 IST" duration-ms="1112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WebViewTest@38afe297]" started-at="2025-08-11T18:52:54 IST" name="tearDown" finished-at="2025-08-11T18:52:54 IST" duration-ms="655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Set;
 
 public class WebViewPage {
     private final AndroidDriver driver;
@@ -46,16 +47,24 @@ public class WebViewPage {
     }
 
     public void switchToWebViewContext() {
-        new WebDriverWait(driver, Duration.ofSeconds(10)).until(d -> {
-            for (String context : driver.getContextHandles()) {
+        final int maxRetry = 10;
+        int retry = 0;
+        while (retry < maxRetry) {
+            Set<String> contexts = driver.getContextHandles();
+            for (String context : contexts) {
                 if (context.toLowerCase().contains("webview")) {
                     driver.context(context);
                     System.out.println("Now you are in web view context: " + context);
-                    return true;
+                    return;
                 }
             }
-            return false;
-        });
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+            }
+            retry++;
+        }
+        throw new RuntimeException("WEBVIEW context not found");
     }
 
     public void searchAppium() {

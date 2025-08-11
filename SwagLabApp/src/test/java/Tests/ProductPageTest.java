@@ -2,9 +2,12 @@ package Tests;
 
 import Pages.ProductPage;
 import io.appium.java_client.AppiumBy;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class ProductPageTest extends BaseTest {
 
@@ -12,12 +15,15 @@ public class ProductPageTest extends BaseTest {
     public void testAddToCartAndOpenCart() {
         ProductPage productPage = new ProductPage(driver);
 
-        productPage.scrollToAddToCartAndTap();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
+        productPage.scrollToAddToCartAndTap();
         productPage.tapCartIcon();
 
-        boolean cartPageVisible = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"YOUR CART\"]"))
-                .isDisplayed();
+        boolean cartPageVisible = wait.until(ExpectedConditions
+                .visibilityOfElementLocated(AppiumBy.androidUIAutomator(
+                        "new UiSelector().text(\"YOUR CART\")"))
+        ).isDisplayed();
 
         Assert.assertTrue(cartPageVisible, "Cart page is not visible after tapping cart icon.");
     }
