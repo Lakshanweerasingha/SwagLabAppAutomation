@@ -32,6 +32,7 @@ public class HomePage {
     public boolean isPageLoaded() {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(homePageTitle)).isDisplayed();
     }
+    
 
     public List<WebElement> getProductTitles() {
         return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(productTitles));
